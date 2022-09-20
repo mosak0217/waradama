@@ -1,0 +1,27 @@
+@use '../mixin/mixin' as *;
+@use '../setting/setting' as *;
+
+/* --------------------------------
+c-footer
+----------------------------------- */
+.c-footer {
+  height: 300px;
+  background-color:$red;
+  color: $text;
+  a {
+    color: inherit;
+  }
+}
+
+#footer {
+  .inner-block {
+    display: flex;
+    width: 100%;
+
+  }
+}
+#footer {
+  .inner-block {
+    
+  }
+}

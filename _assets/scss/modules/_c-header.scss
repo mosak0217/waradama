@@ -1,0 +1,50 @@
+@use '../mixin/mixin' as *;
+@use '../setting/setting' as *;
+
+/* --------------------------------
+c-header
+----------------------------------- */
+.c-header {
+  height: 80px;
+  background-color: $white;
+  font-weight: bold;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+#header {
+  .inner-block {
+    display:flex;
+  }
+}
+#header {
+  .inner-block {
+    .header-nav {
+      display: flex;
+      align-items: center;
+  }
+
+}
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.header-nav__list-item {
+  font-weight: bold;
+  margin-right: 50px;
+  span {
+    font-size: 11px;
+    display: block;
+    font-family: futura-pt,sans-serif;
+font-weight: 600;
+font-style: italic;
+  }
+
+}

@@ -1,0 +1,49 @@
+@use '../mixin/mixin' as *;
+@use '../setting/setting' as *;
+
+/* --------------------------------
+c-contact
+----------------------------------- */
+
+
+
+#contact {
+  position: fixed;
+  top: 110px;
+  right: 20px;
+  .contact-area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    li {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+#contact {
+  .contact-area {
+    .mail {
+      padding: 40px 16px 30px 16px;
+      background: white;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid $red;
+     
+      
+      span {
+        display: block;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        color: $red;
+        letter-spacing: 0.3em;
+        padding-top: 10px;
+        font-weight: bold;
+        
+      }
+    }
+
+  }
+
+}
