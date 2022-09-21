@@ -1,3 +1,291 @@
 @use '../../mixin/mixin' as *;
 @use '../../setting/setting' as *;
 
+
+/* --------------------------------
+about
+----------------------------------- */
+
+
+.about-catch-area {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 97px;
+
+  p {
+    font-size: 22px;
+    color: $red;
+    font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: italic;
+  }
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: $red;
+  margin-bottom: 80px;
+  letter-spacing: 0.2em;
+  span {
+    display: block;
+    font-size: 20px;
+    color: black;
+    font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: italic;
+letter-spacing: 0.1em;
+  }
+
+}
+
+
+
+#message {
+
+  .container {
+
+    .message-title {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      margin: 80px;
+    }
+   
+  }
+
+
+  .flex-cont {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 200px;
+
+    img {
+      width: 25%;
+      height: 128px;
+    }
+
+    .message-cont__text {
+      font-size: 16px;
+      line-height: 2.5;
+      margin-left: 127px;
+    }
+  }
+
+}
+
+#profile {
+
+  .flex-cont {
+    display: flex;
+    justify-content: center;
+
+    .ceo-img-area {
+      width: 24%;
+
+    }
+
+    .ceo-text-area {
+      width: 49%;
+      line-height: 1.9;
+      margin-left: 118px;
+      font-size: 16px;
+      p {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+.ceo-img-area {
+
+  .ceo-name {
+    h3 {
+      display: flex;
+      
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+}
+
+.ceo-name {
+
+  .ceo-name__logo {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 31px;
+
+
+    h3 {
+      display: block;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      margin-left: 21px;
+      span {
+        font-size: 16px;
+        color: $red;
+        font-weight: bold;
+       
+      }
+    }
+  }
+}
+
+.ceo-detail {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
+  line-height: 1.7;
+ 
+  li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 0.6em;
+    }
+li:before {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    content: "";
+    background: $red;
+    
+    }
+    li:nth-child(n+3)::before {
+      background: black;
+    }
+
+}
+
+.follow-text {
+  font-size: 20px;
+  color: $red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 52px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.follow-text::before,
+.follow-text::after {
+  background: $red;
+  border-radius: 5px;
+  content: "";
+  height: 2px;
+  width: 30px;
+}
+.follow-text::before {
+  transform: rotate(50deg);
+}
+.follow-text::after {
+  transform: rotate(-50deg);
+}
+
+.sns-area {
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .sns-icon {
+    margin-left: 50px;
+    
+  }
+  .sns-icon:first-child {
+    margin-left: 0;
+    
+  }
+}
+
+#history {
+  margin: 0 auto;
+
+  .history-desc {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 16px;
+
+    dt {
+      width: 20%;
+      padding-bottom: 20px;
+    }
+    dd {
+      width: 80%;
+      padding-bottom: 20px;
+      span {
+        display: block;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+#history {
+  margin-bottom: 125px;
+ .container {
+  max-width: 750px;
+ }
+}
+
+#outline {
+
+  .outline-desc {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid $gray;
+
+    dt {
+      width: 25%;
+      padding: 22px 50px;
+      border-bottom: 1px solid $gray;
+      background: $thinRed2;
+      text-align: center;
+      border-right: 1px solid $gray;
+    }
+    dt:last-of-type {
+      border-bottom: none;
+    }
+    
+    
+    dd {
+      width: 75%;
+      padding: 22px 50px;
+      border-bottom: 1px solid $gray;
+    }
+    dd:last-child {
+      border-bottom: none;
+      
+    }
+  }
+}
+
+#outline {
+  margin-bottom: 205px;
+ .container {
+  max-width: 800px;
+ }
+}
+
+
+
+
+

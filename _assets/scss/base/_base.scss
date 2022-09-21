@@ -13,6 +13,7 @@ button {
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
+
 }
 
 html {
@@ -133,6 +134,15 @@ main {
   margin: 0 auto;
 }
 
+#container {
+  max-width: 1120px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -146,17 +156,23 @@ dl,dt,dd {
 .sec-title {
   font-size: 50px;
   color: $red;
-  font-family: futura-pt, sans-serif; 
-  font-weight: normal;
-  font-style: italic;
+  letter-spacing: 0.1rem;
+  font-family: futura-pt, sans-serif;
+font-weight: 300;
+font-style: italic;
+text-align: center;
   
   span {
     display: block;
     font-size: 16px;
     font-weight: bold;
     color: $text;
+    font-family: "游ゴシック体";
+
   }
 }
+
+
 
 @include pc {
   .sp {
@@ -184,13 +200,13 @@ dl,dt,dd {
  font-weight: 500;
  font-display: swap;
 }
-//@font-face {
-//  src: url(../font/NotoSansJP-Bold.woff) format("woff"),
-//    url(../font/NotoSansJP-Bold.otf) format("opentype");
-//  font-family: "Noto Sans JP";
-//  font-weight: 700;
-//  font-display: swap;
-//}
+@font-face {
+ src: url(../font/NotoSansJP-Bold.woff) format("woff"),
+   url(../font/NotoSansJP-Bold.otf) format("opentype");
+ font-family: "Noto Sans JP";
+ font-weight: 700;
+ font-display: swap;
+}
 
 
 

@@ -147,6 +147,11 @@ slick
 }
 
  
+.mv-sub {
+    .slick-dots {
+        display: none !important;
+    }
+}
 
 
 
