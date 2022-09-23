@@ -3,5 +3,55 @@
 
 
 /* --------------------------------
-c-header
+life-produce
 ----------------------------------- */
+
+
+.life-catch-area {
+  text-align: center;
+  
+  .catch-text {
+    font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 70px;
+  letter-spacing: 0.05em;
+
+  .catch-text__ajustment {
+    margin-right: -38px;
+  }
+  
+
+  span {
+    margin-left: 0;
+    letter-spacing: 0.05em;
+  }
+  }
+
+}
+
+.catch-unit {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 100px;
+  line-height: 1.7;
+
+  span {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+
+}
+
+.middle-unit {
+  line-height: 2.3;
+
+  span {
+    margin-left: 0;
+  }
+}
+
+.life-img {
+  margin-bottom: 134px;
+}

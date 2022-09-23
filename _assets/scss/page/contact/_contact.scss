@@ -5,13 +5,273 @@
 
 
 /* --------------------------------
-c-header
+ contact
 ----------------------------------- */
 
 
 #contact-page {
+  padding-top: 105px;
+  padding-bottom: 219px;
   input {
+    background: $thinRed;
+  }
+  .form-item-Textarea {
     background: $thinRed;
   }
 }
 
+
+#contact-page {
+  
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 18px;
+    color: $red;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+  }
+
+}
+
+.c-block-input__items {
+  margin-bottom: 32px
+}
+
+.c-block-input__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block
+}
+
+.c-block-input__radio input[type="radio"] {
+  display: none
+}
+
+.c-block-input__radio label {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 3px 0 3px 26px;
+  position: relative;
+  width: auto;
+  font-weight: bold;
+}
+
+.c-block-input__radio label::before {
+  content: "";
+  display: block;
+  border: 1px solid $red;
+  border-radius: 1000px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -8px
+}
+
+.c-block-input__radio label::after {
+  content: "";
+  display: block;
+  background: $red;
+  border-radius: 1000px;
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  margin-top: -4px
+}
+
+.c-block-input__radio input[type=radio]:checked+label::after {
+  opacity: 1
+}
+.c-block-input__radio {
+  display: inline-block;
+  
+}
+
+.c-block-input {
+  text-align: center;
+}
+
+
+.radio-top {
+  text-align: left;
+}
+
+.radio-bottom {
+  text-align: left;
+
+  .c-block-input__radio {
+    text-align: left;
+  }
+}
+
+.c-block-input__items {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+
+}
+
+.radio-ajustment {
+  margin-left: 46px;
+}
+
+
+.form-item {
+  margin-bottom: 30px;
+
+  .form-item-input {
+    width: 44%;
+    padding: 10px;
+    border: 1px solid $red;
+    border-radius: 10px;
+    
+  }
+
+  .form-item-Textarea {
+    width: 44%;
+    padding: 10px;
+    border: 1px solid $red;
+    border-radius: 10px;
+    min-height: 260px;
+
+  }
+
+}
+
+.form-btn {
+  width: 265px;
+  padding-top: 23px;
+  padding-bottom: 27px;
+  border-radius: 10px;
+  background: $red;
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 1s ease;
+  margin-top: 40px;
+
+  input {
+    font-size: 20px;
+    font-weight: bold;
+    color: $white;
+    
+
+  }
+
+  
+}
+
+.form-btn:hover {
+  transform: translateY(-10px);
+  
+  
+}
+
+
+.ECM_CheckboxInput {
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  }
+  .ECM_CheckboxInput-Input {
+  margin: 0;
+  width: 0;
+  opacity: 0;
+  }
+  .ECM_CheckboxInput:hover > .ECM_CheckboxInput-DummyInput {
+  background: $white !important;
+  border: solid 2px $text;
+  }
+  .ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput {
+  background: $white !important;
+  border: solid 2px $text;
+  }
+  .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
+  border: solid 2px $text;
+  background: $white;
+  }
+  .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItY2hlY2siPjxwb2x5bGluZSBwb2ludHM9IjIwIDYgOSAxNyA0IDEyIj48L3BvbHlsaW5lPjwvc3ZnPg==") no-repeat center;
+  background-size: contain;
+  }
+  .ECM_CheckboxInput-DummyInput {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: solid 2px $text;
+  background: $white;
+  border-radius: 4px;
+  margin: 0 !important; 
+  }
+  .ECM_CheckboxInput-LabelText {
+  margin-left: 12px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  }
+
+
+  .privacy-textarea {
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+
+    .privacy-title {
+      padding-bottom: 10px;
+      font-weight: bold;
+    font-size: 14px;
+    }
+
+    .privacy-text {
+      font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 30px;
+    }
+  }
+
+  .form {
+
+    .privacy-textarea {
+      position: relative;
+      
+
+      .close_button{
+        position: absolute;
+        bottom: 14px;
+        right: 16px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+
+    
+  }
+
+  

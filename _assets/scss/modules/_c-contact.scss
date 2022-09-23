@@ -22,14 +22,22 @@ c-contact
   }
 }
 
+@include min($contact){
+  #contact {
+    right: calc(50% - 720px);
+  }
+}
+
+
 #contact {
   .contact-area {
     .mail {
       padding: 40px 16px 30px 16px;
-      background: white;
-      border-radius: 10px;
+      background: $white;
+      border-radius: 10px 0 0 10px;
       text-align: center;
       border: 1px solid $red;
+      border-right: none;
      
       
       span {

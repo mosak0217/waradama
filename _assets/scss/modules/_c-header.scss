@@ -34,6 +34,7 @@ c-header
   align-items: center;
   text-align: center;
   font-size: 14px;
+
 }
 
 .header-nav__list-item {
@@ -42,9 +43,13 @@ c-header
   span {
     font-size: 11px;
     display: block;
-    font-family: futura-pt,sans-serif;
-font-weight: 600;
+    font-family: futura-pt, sans-serif;
+font-weight: 400;
 font-style: italic;
+  }
+
+  a:hover {
+    color: $red;
   }
 
 }

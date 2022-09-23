@@ -36,7 +36,16 @@ c-mv
       font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: italic;
+  letter-spacing: 0.2em;
     }
   }
 
+}
+
+.mv-sub {
+
+
+  .slick-img {
+    filter: brightness(70%);
+  }
 }

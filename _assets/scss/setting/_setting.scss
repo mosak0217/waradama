@@ -4,8 +4,9 @@
 $placeholderColor: #c3c3c3;
 
 // メディアクエリの基準幅
-$bp-sp: 640px;
-$bp-pc: 641px;
+$bp-sp: 1109px;
+$bp-pc: 1110px;
+$contact: 1440;
 
 // vwの基準となる幅 →320px=スマホ最小
 $vw_standard_width: 375;
@@ -21,3 +22,5 @@ $gray:#707070;
 $thinRed: rgb(165, 31, 36, 20%);
 $thinRed2: rgb(165, 31, 36, 10%);
 $outline: #909090;
+$overlay: rgba(0,0,0,.6);
+$mvMask: rgba(112, 112, 112, 0.7);

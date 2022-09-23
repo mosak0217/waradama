@@ -19,7 +19,7 @@
   <meta property="og:site_name" content="サイトのドメイン ">
 
   <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link rel="stylesheet" href="https://use.typekit.net/tgn0ceh.css">
+  <link rel="stylesheet" href="https://use.typekit.net/vbq7yqr.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
@@ -42,7 +42,7 @@
           <li class="header-nav__list-item"><a href="../life-produce/index.html">ライフプロデュース塾<span>LIFE PRODUCE SEMINAR</span></a></li>
           <li class="header-nav__list-item"><a href="../voices/index.html">お客様の声<span>VOICES</span></a></li>
           <li class="header-nav__list-item"><a href="#">ブログ<span>BLOG</span></a></li>
-          <li class="header-nav__list-item"><a href="../community/index.html">行政/地域交流サービス<span>ADMINSTRATION/COMMUNITY EXCHANGE</span></a></li>
+          <li class="header-nav__list-item"><a href="../community/index.html">行政/地域交流サービス<span>COMMUNITY</span></a></li>
           <li class="header-nav__list-item"><a href="../media/index.html">メディア掲載<span>MEDIA</span></a></li> 
         </ul><!-- /header-nav__list -->
         </nav><!-- /header-nav -->
@@ -84,26 +84,35 @@
 
       <div class="form">
         <div class="form-item">
-          <div>
-            <input type="radio" id="request" name="kind" value="request"
-                   checked>
-            <label for="request">講座のご依頼</label>
+
+          <div class="c-block-input">
+            <div class="c-block-input__items">
+              <div class="radio-top">
+                <div class="c-block-input__radio">
+                  <input type="radio" name="ラジオボタン" id="radio01" checked>
+                  <label for="radio01">講座のご依頼</label>
+                </div>
+                <div class="c-block-input__radio radio-ajustment">
+                  <input type="radio" name="ラジオボタン" id="radio02">
+                  <label for="radio02">ご質問</label>
+                </div>
+              </div><!--radio-top-->
+
+              <div class="radio-bottom">
+                <div class="c-block-input__radio">
+                  <input type="radio" name="ラジオボタン" id="radio03">
+                  <label for="radio03">取材のお申込</label>
+                </div>
+                <div class="c-block-input__radio radio-ajustment">
+                  <input type="radio" name="ラジオボタン" id="radio04">
+                  <label for="radio04">その他</label>
+                </div>
+                
+              </div><!--radio-botto-->
+            </div>
           </div>
-      
-          <div>
-            <input type="radio" id="question" name="kind" value="question">
-            <label for="question">ご質問</label>
-          </div>
-      
-          <div>
-            <input type="radio" id="application" name="kind" value="application">
-            <label for="application">取材のお申込</label>
-          </div>
-          <div>
-            <input type="radio" id="others" name="kind" value="others">
-            <label for="others">その他</label>
-          </div>
-        </div>
+
+
         <div class="form-item">
           <input type="text" class="form-item-input" placeholder="お名前">
         </div>
@@ -120,12 +129,233 @@
           <textarea class="form-item-Textarea" placeholder="メッセージの内容を入力してください"></textarea>
         </div>
 
-        
+   
 
-        <input type="submit" class="form-btn" value="送信">
+        <label class="ECM_CheckboxInput"><input class="ECM_CheckboxInput-Input" type="checkbox"><span class="ECM_CheckboxInput-DummyInput modal-open" data-micromodal-trigger="modal-1" onclick="disabled = true;"></span><span class="ECM_CheckboxInput-LabelText">プライバシーポリシーに同意する</span></label>
+
+        <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+          <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+            <div
+              class="modal-container"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-1-title"
+            >
+            
+
+            <div class="privacy-textarea">
+
+             <h2 class="privacy-title">プライバシーポリシー</h2>
+
+ 
+
+             <p class="privacy-text">笑い魂（以下「当会」といいます）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全スタッフに個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。</p><br>
+
+             <h3 class="privacy-title">​個人情報の管理</h3>
+             <p class="privacy-text">当会は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。</p><br>
+
+ 
+
+
+<h3 class="privacy-title">個人情報の利用目的</h3>
+<p class="privacy-text">お客さまからお預かりした個人情報は、当会からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。</p><br>
+
+ 
+
+
+<h3 class="privacy-title">個人情報の第三者への開示・提供の禁止</h3>
+<p class="privacy-text">当会は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。</p><br>
+
+<h3 class="privacy-title">お客さまの同意がある場合</h3>
+<p class="privacy-text">お客さまが希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合<br>
+法令に基づき開示することが必要である場合</p><br>
+
+
+<h3 class="privacy-title">個人情報の安全対策</h3>
+<p class="privacy-text">当会は、個人情報の正確性及び安全性確保のために、セキュリティに万全の対策を講じています。</p><br>
+
+ 
+
+ 
+
+<h3 class="privacy-title">ご本人の照会</h3>
+<p class="privacy-text">お客さまがご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させていただきます。</p><br>
+
+ 
+
+<h3 class="privacy-title">法令、規範の遵守と見直し</h3>
+<p class="privacy-text">当会は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。</p>
+
+ 
+
+
+<h3 class="privacy-title">お問い合せ</h3>
+<p class="privacy-text">当会の個人情報の取扱に関するお問い合せは下記までご連絡ください。</p><br>
+
+<p>〒370-0071</p><br>
+
+<p>群馬県高崎市下小鳥町74-27-103</p><br>
+
+<p>Tel: 080-3489-4808</p><br>
+
+<p>「笑い魂」会員規約</p><br>
+
+<h3 class="privacy-title">第１条（理念）</h3>
+
+<p>「笑い魂」（以下「当コミュニティ」）の理念は、下記の通りです。</p><br>
+
+<p>－記－</p><br>
+
+<p class="privacy-text">『微笑みを通り越した「大笑い」をすることでセルフマネジメントを極め、自己実現を可能にする社会を目指します。』</p>
+
+
+<h3 class="privacy-title">＜笑いイノベーションの実現＞</h3><br>
+
+<p>①笑いにおける新しい人間関係構築</p><br>
+
+<p>②笑いにおける新しい健康法の導入</p><br>
+
+<p>③笑いにおける新しい組織の実現</p><br>
+
+<p>④笑いにおける新しい供給源の獲得</p><br>
+
+<p>⑤笑いにおける新しい生き方の追求</p><br>
+
+
+<h3 class="privacy-title">第２条（入会条件）</h3><br>
+
+<p>当コミュニティの会員となるためには、前条に定める理念を理解し、共感し、賛同して頂けることを条件とします。また、以下の各号に該当する場合、会員となることをお断りさせていただく場合がございます。</p><br>
+
+<p>当コミュニティに提供された登録情報の全部、または一部に虚偽や重大な誤記、記載漏れなどがある場合</p><br>
+
+<p>過去に会員規約の違反などで退会処分を受けたことがある場合</p><br>
+
+<p class="privacy-text">その他当コミュニティが会員登録を適当でないと判断した場合</p><br>
+
+
+<h3 class="privacy-title">第３条（会員登録）</h3>
+
+<p>当コミュニティの会員登録の申し込みを行うには、当コミュニティが別途に定める方法に従って、行うものとします。</p><br>
+
+<p>会員登録の可否については、前条に基づき当コミュニティが判断するものとし、その結果の理由・根拠についての説明責任はないものとします。</p><br>
+
+<p class="privacy-text">会員は、当コミュニティが入会を承諾した時点で、本会員規約の内容に同意したものとみなされます。</p>
+
+ 
+
+<h3 class="privacy-title">第４条（会員の特典）</h3>
+
+<p>当コミュニティが運営する「ラフターヨガリーダー養成講座」を入会日から１年間、無料で回数無制限で受講出来ます。但し、当コミュニティが「ラフターヨガリーダー養成講座」の開催回数や開催日時を決定するものとし、最低開催回数等を保証はしないものとします。</p><br>
+
+<p>笑い魂会員限定ページから、「ラフターヨガ指導法、導入法、エクササイズ法、過去のイベントや養成講座」の動画を視聴出来ます。</p><br>
+
+<p class="privacy-text">イベント開催に割引参加出来ます。但し、新型コロナウイルスの感染拡大状況等の理由により開催されない場合があるため、イベントの開催を保証するものではありません。</p><br>
+
+ 
+
+<h3 class="privacy-title">第５条（会費）</h3>
+
+<p>当コミュニティの会費は、年間6,000円（税別）とする。なお、期間途中の退会であっても会費の返還はいたしかねますので、ご注意ください。</p><br>
+
+<p class="privacy-text">当コミュニティの会員資格は、自動更新です。したがって、更新を希望されない場合には、会員資格の満了日の１ヵ月前までに、お申し出願います。</p><br>
+
+ 
+
+    <h3 class="privacy-title">第６条（禁止事項）</h3><br>
+
+    <p>当コミュニティへの参加にあたり、以下の各号のいずれかに該当する行為を禁止します。</p><br>
+
+    <p>会員の行為が以下の各号のいずれかに該当すると当コミュニティが判断した場合には、事前に通知することなく、当該行為の全部または一部を停止させ、当該違反行為を排除するあらゆる措置を講じることができるものとします。</p><br>
+
+    <p>当コミュニティもしくは他者の著作権、商標権などの知的財産権を侵害する行為</p><br>
+
+    <p>他者の財産、プライバシーもしくは肖像権を侵害する行為</p><br>
+
+    <p>当コミュニティ、当コミュニティの会員、その他第三者の名誉もしくは信用を毀損する行為</p><br>
+
+    <p>当コミュニティ、当コミュニティの会員、その他第三者への迷惑行為</p><br>
+
+    <p>個人情報やID・パスワード等の機密情報を、他の会員や第三者に漏洩する行為</p><br>
+
+    <p>他人になりすまして当コミュニティを利用する行為</p><br>
+
+    <p>政治活動、宗教活動、ネットワークビジネス活動またはそれらにつながる行為あるいは公序良俗に反する行為</p><br>
+
+    <p>許可なく当コミュニティの名称を使用する行為</p><br>
+
+    <p>会員資格の第三者への利用許諾、貸与、譲渡、売買、その他担保に供する行為</p><br>
+
+    <p>当コミュニティの運営を妨害しようとする行為</p><br>
+
+    <p>当コミュニティの活動を許可なくSNSにアップロードする行為</p><br>
+
+    <p>当コミュニティの活動を誹謗中傷する行為</p><br>
+
+    <p class="privacy-text">その他当コミュニティが不適切と判断する行為</p><br>
+
+ 
+
+ 
+
+    <h3 class="privacy-title">第７条（規約の変更）</h3><br>
+
+    <p></p>当コミュニティは、必要と判断した際に、会員の承諾なしに本規約の変更ができるものとします。</p><br>
+
+    <p class="privacy-text">本規約の変更は、当コミュニティが別途定める方法で随時会員に公表します。</p><br>
+
+ 
+
+    <h3 class="privacy-title">第８条（会員情報の取り扱い）</h3><br>
+
+      <p>当コミュニティは、会員の個人情報を個人情報保護法及び関連法令に則り、取り扱うものとします。</p><br>
+
+        <p>会員は、当コミュニティに申告している自身の登録情報に変更があった場合には、速やかに当コミュニティに変更内容を連絡するものとします。</p><br>
+
+        <p class="privacy-text">会員は、当コミュニティおよび当コミュニティの提携企業が、当コミュニティ運営に必要な範囲において、登録情報を取得し利用することに同意します。</p><br>
+
+
+            <h3 class="privacy-title">第９条（損害賠償）</h3><br>
+
+            <p class="privacy-text">会員は、当コミュニティへの参加により当コミュニティまたは第三者に対して損害を与えた場合、自己の責任と費用をもって損害を賠償するものとします。</p><br>
+
+
+                <h3 class="privacy-title">第１０条（サービスの変更・終了）</h3><br>
+
+                  <p>当コミュニティは、会員への事前の通知なく、当コミュニティの内容・名称の変更を行うことができるものとします。</p><br>
+
+                    <p>但し、当コミュニティの終了・利用料の額を変更（以下総称して「変更等」とします）する場合には、オンラインまたは当コミュニティ</p><br>
+
+                    <p class="privacy-text">が別途定める方法で、事前に会員へ公表します。</p><br>
+
+
+                        <h3 class="privacy-title">第１１条（免責）</h3><br>
+
+                          <p>当コミュニティは、当コミュニティへの参加に際して、会員に生じた不利益や損害などに対して、一切の責任を負わないものとします。</p><br>
+
+                          <p class="privacy-text">会員が、当コミュニティ等から得る情報等についての一切は、利用者の責任において利用するものとし、当コミュニティは、いかなる保証も行なわないものとします。</p><br>
+
+                              <h3 class="privacy-title">第１２条（協議事項）</h3><br>
+
+                              <p class="privacy-text">当コミュニティのアクティビティにおける説明（口頭を含む）・掲示物等と本規約に異なる内容がある場合には、会員及び当コミュニティは信義則に基づき協議の上、解決するものとする。</p><br>
+
+
+                                  <h3 class="privacy-title">第１３条（準拠法および合意管轄）
+
+                                    <p class="privacy-text">本規約には、日本法が適用されます。 当コミュニティに関連する紛争、訴訟については、前橋地方裁判所を第一審の専属的合意管轄裁判所とします。</p><br>
+
+
+                                      <h3 class="privacy-title">施行日：2021年6月1日</h3><br>
+
+                                      <label for="trigger" tabindex="-1" data-micromodal-close class="close_button">✖️</label>
+
+              </div>
+            </div>
+
+          </div><!--modal micromodal-slide-->
+
       </div>
 
-
+      <button class="form-btn"><input type="submit" value="送信"></button>
 
 
     </div><!--container-->

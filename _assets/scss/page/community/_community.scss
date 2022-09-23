@@ -4,5 +4,275 @@
 
 
 /* --------------------------------
-c-header
+community
 ----------------------------------- */
+
+
+.info-title {
+  font-size: 26px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  color: $red;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 88px;
+}
+
+
+
+#yoga {
+
+  .container {
+
+    .community-title {
+      display: flex;
+      align-items: center;
+      font-size: 46px;
+      color: $red;
+      letter-spacing: 0.05em;
+      font-weight: bold;
+      span {
+        display: inline-block;
+        margin-left: 30px;
+      }
+    }
+
+  }
+}
+
+.yoga-left {
+  width: 61%;
+
+  .community-text {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-top: 56px;
+    margin-left: 90px;
+
+    a {
+      color: $white;
+      background: $red;
+      padding: 5px;
+    }
+  }
+}
+
+.yoga-cont {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 123px;
+}
+
+.yoga-desc {
+  width: 460px;
+  margin-left: 90px;
+  margin-top: 100px;
+
+  caption {
+    font-size: 29px;
+    font-weight: bold;
+    background: $red;
+    color: $white;
+    text-align: center;
+    position: relative;
+    padding: 14px;
+
+    img {
+      position: absolute;
+      top: -39px;
+    left: 0px;
+    }
+  }
+
+  td {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 0.1em;
+  }
+  .color-red {
+    background: $thinRed2;
+  }
+}
+
+.yoga-right {
+  width: 39%;
+  margin-left: 47px;
+}
+
+
+#seminar {
+
+  .community-title {
+    display: flex;
+    align-items: center;
+    font-size: 46px;
+    color: $red;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    span {
+      display: inline-block;
+      margin-left: 30px;
+    }
+
+}
+}
+
+#seminar {
+
+  margin-bottom: 120px;
+
+  .community-text {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-top: 56px;
+    margin-left: 90px;
+    width: 61%;
+
+  }
+
+  .seminer-cont {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    img {
+      width: 39%;
+    }
+  }
+
+}
+
+
+#activity {
+  
+
+  .community-title {
+    display: flex;
+    align-items: center;
+    font-size: 46px;
+    color: $red;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    span {
+      display: inline-block;
+      margin-left: 30px;
+    }
+
+}
+}
+
+.seminer-achievement {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  color: $red;
+  
+  }
+  .seminer-achievement::before,
+.seminer-achievement::after {
+  background-color: $red;
+  border-radius: 5px;
+  content: "";
+  height: 1px;
+  width: 30px;
+}
+.seminer-achievement::before {
+  margin-right: 20px;
+}
+.seminer-achievement::after {
+  margin-left: 20px;
+}
+
+.seminer-achievement__textarea {
+  font-size: 16px;
+  padding-bottom: 40px;
+  text-align: left;
+  width: 61%;
+  display: table;
+  margin: 0 auto;
+
+  .seminer-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-indent: -1em;
+    
+    
+
+    span {
+      color: $red;
+    }
+
+  }
+
+}
+
+.seminer-text {
+  display: inline-block;
+    text-align: left;
+    
+    
+}
+
+.seminer-info {
+  text-align: center;
+  color: $red;
+  border: 1px solid $red;
+  width: 71%;
+  margin: 0 auto;
+  padding: 18px;
+  line-height: 1;
+
+  a {
+    color: $red;
+    border-bottom: 2px solid $red;
+    padding-bottom: 4px;
+  }
+
+  .tel-number {
+    border-bottom: none;
+  }
+
+}
+
+#activity {
+  margin-bottom: 200px;
+
+  .activity-cont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  .community-text {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 50px;
+    
+
+  }
+
+  .movie-area {
+    margin-left: 90px;
+
+    p {
+      color: $red;
+      text-align: center;
+      padding-top: 30px;
+      font-size: 16px;
+    }
+   
+  }
+}

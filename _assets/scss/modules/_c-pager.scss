@@ -1,0 +1,40 @@
+@use '../mixin/mixin' as *;
+@use '../setting/setting' as *;
+
+/* --------------------------------
+pager
+----------------------------------- */
+
+.pager {
+  margin-bottom: 200px;
+  
+  .pagination {
+   justify-content: center;
+    display: flex;
+    
+    .active {
+      border-bottom: 1px solid $red;
+      padding-bottom: 8px;
+
+      span {
+        color: $red;
+      }
+      
+    }
+
+    li {
+      padding-right: 30px;
+    }
+    li:last-child {
+      padding-right: 0;
+    }
+
+    span {
+      font-size: 28px;
+      font-family: futura-pt, sans-serif;
+      font-weight: 500;
+      font-style: italic;
+color: $gray;
+    }
+  }
+}

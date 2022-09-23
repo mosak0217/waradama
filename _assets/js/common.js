@@ -145,5 +145,30 @@ Modal.init({
   awaitCloseAnimation: true 
 });
  
-Modal.show('modal-id');
-Modal.close('modal-id');
+
+
+
+
+// ハンバーガーボタン
+
+const ham = document.querySelector('#js-hamburger');
+const nav = document.querySelector('#js-nav');
+
+ham.addEventListener('click', function () {
+
+  ham.classList.toggle('active');
+  nav.classList.toggle('active');
+
+});
+
+$(document).on('click', '#js-nav', function() {
+  nav.classList.toggle('active');
+  ham.classList.toggle('active');
+});
+
+$('.header-nav__list-item a').on('click', function() {
+  nav.classList.toggle('active');
+  ham.classList.toggle('active');
+});
+
+

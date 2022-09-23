@@ -9,7 +9,7 @@ modal-area
 /* モーダル */
 .modal-overlay {
   align-items: center;
-  background: rgba(0,0,0,.6);
+  background: $overlay;
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@ modal-area
 }
 
 .modal-container {
-  background-color: #fff;
+  background-color: $white;
   max-height: 80vh;
   max-width: 500px;
   overflow-y: auto;
@@ -52,22 +52,11 @@ modal-area
 
 .modal-open {
   display: block;
-  margin: 100px auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.box01 {
-  background-color: #ccc;
-  height: 200px;
-  margin: 0 auto;
-  width: 80%;
-}
 
-.box02 {
-  background-color: #ccc;
-  height: 200px;
-  margin: 0 auto;
-  width: 80%;
-}
 
 /* モーダルアニメーション */
 @keyframes mmfadeIn {
@@ -133,4 +122,193 @@ modal-area
 .micromodal-slide .modal-container,
 .micromodal-slide .modal-overlay {
   will-change: transform;
+}
+
+
+
+#tab {
+  display: flex;
+ justify-content: center;
+ margin-top: 100px;
+ margin-bottom: 80px;
+
+ li{
+  font-size: 20px;
+  font-weight: bold;
+  background: $white;
+  color: $red;
+  border: 1px solid $red;
+  border-radius: 10px;
+  transition: all .5s;
+  margin-right: 20px;
+
+ }
+ li a{
+  color: $red;
+  display: block;
+  padding: 20px 70px;
+
+ }
+
+ li:hover {
+  background: $thinRed;
+
+ }
+ li:last-child {
+  margin-right: 0;
+
+ }
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+
+  .none {
+    display: none;
+  }
+}
+
+
+
+article.contents {
+  display: flex;
+}
+
+#container {
+
+  .post {
+    position: relative;
+    width: calc(100% / 3);
+    border-radius: 8px;
+    margin-left: 35px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+
+    .category {
+      position: absolute;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 7px 19px;
+      color: $white;
+      background: $red;
+      height: 40px;
+    }
+
+    img {
+      padding: 30px;
+    }
+
+    .post__title {
+      font-size: 18px;
+      font-weight: bold;
+
+      span {
+        color: $red;
+      }
+
+    }
+  }
+
+  .post:last-child {
+    margin-right: 0;
+  }
+
+  .pager {
+    margin-top: 120px;
+  }
+}
+
+#container {
+
+  .post__name {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    span {
+      color: $red;
+      border-top: 1px solid $red;
+      padding-top: 4px;
+      display: block;
+    }
+  }
+
+  .post__text {
+    font-size: 16px;
+  }
+
+}
+
+.post__textarea {
+  padding-left: 28px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.voice-cont {
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.modal-voice {
+  background-color: $white;
+  max-height: 472px;
+  max-width: 1120px;
+  overflow-y: auto;
+ padding-top: 50px;
+ padding-bottom: 50px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.voice-img-area__info {
+  color: $red;
+}
+
+.voice-img-area {
+  position: relative;
+
+  .category {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 19px;
+    color: $white;
+    background: $red;
+    height: 40px;
+    top: 0;
+    left: -58px;
+  }
+}
+
+
+
+.batsu {
+  display: block;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 30px;
+    top: 30px;
+}
+ 
+.batsu::before, .batsu::after { /* 共通設定 */
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px; /* 棒の幅（太さ） */
+  height: 30px; /* 棒の高さ */
+  background: #333;
+}
+ 
+.batsu::before {
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+ 
+.batsu::after {
+  transform: translate(-50%,-50%) rotate(-45deg);
 }
