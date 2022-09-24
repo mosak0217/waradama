@@ -23,6 +23,7 @@ hamburger
     height: 80px;
     position: absolute;
     right: 0px;
+    top: 0;
 }
 
 .hamburger {
@@ -33,7 +34,27 @@ hamburger
 @include sp {
 
   .header-nav {
-    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    background: $mvMask;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    -webkit-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+    opacity: 0;
   }
   li.header-nav__list-item {
     height: 100px;
@@ -70,9 +91,10 @@ hamburger
   
   /* ハンバーガーメニュークリック後のスタイル */
   .header-nav.active {
-    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
     
-  }
+ }
   
   .hamburger.active span:nth-child(1) {
     top: 5px;
@@ -90,29 +112,19 @@ hamburger
   } 
 
   .header-nav.active {
-    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
 }
 
-  .header-nav {
-    position: absolute;
-    right: 0;
-    left: 63%;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
-    background-color: $white;
-    transition: ease .4s;
-    opacity: 0.7;
-}
+  
 .header-nav__list {
   position: absolute;
-  top: 50%;
-  left: 20%;
+  top: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   padding: 0;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   
  
 }

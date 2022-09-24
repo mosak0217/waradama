@@ -49,3 +49,7 @@ c-mv
     filter: brightness(70%);
   }
 }
+
+@include max($tab) {
+
+}

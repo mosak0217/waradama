@@ -10,7 +10,7 @@ c-contact
 #contact {
   position: fixed;
   top: 110px;
-  right: 20px;
+  right: 0;
   .contact-area {
     display: flex;
     align-items: center;
@@ -22,11 +22,7 @@ c-contact
   }
 }
 
-@include min($contact){
-  #contact {
-    right: calc(50% - 720px);
-  }
-}
+
 
 
 #contact {
