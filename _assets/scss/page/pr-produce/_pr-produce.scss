@@ -64,6 +64,10 @@ font-style: italic;
   }
 }
 
+.success-area__appeal {
+  padding: 10px;
+}
+
 .success-area {
   width: 100%;
   
@@ -167,7 +171,6 @@ font-style: italic;
   color: $white;
   padding: 16px 23px;
   border-radius: 10px;
-  margin-left: 15px;
   width: 68%;
   position: relative;
   font-family: "Noto Sans JP";
@@ -301,4 +304,135 @@ font-style: italic;
 
 .margin-adjustment {
   margin-bottom: 200px;
+}
+
+.pr-img-bottom-area {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 195px;
+}
+
+
+@include sp {
+
+  .pr-img-bottom-area {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin-bottom: 50px;
+    }
+  }
+
+.success-area__appeal {
+
+  
+  .success-area__appeal-top {
+    width: 90%;
+
+    .appeal-top-text {
+      margin: 0;
+      padding: 16px;
+    }
+
+  }
+
+
+
+}
+
+
+
+
+}
+
+@include max($tab) {
+
+  .feature-cont-top-img {
+    display: flex;
+    flex-direction: column;
+   
+    img {
+      padding: 20px;
+    }
+  }
+  .feature-cont-bottom-img {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      padding: 20px;
+    }
+  }
+
+}
+
+@include max($sm) {
+  .feature-cont .feature-cont__title  {
+    font-size: 28px;
+  }
+  .appeal-top-text {
+    font-size: 16px;
+  }
+
+  .support-area .catch-area {
+    font-size: 22px;
+
+
+    span {
+      font-size: 45px;
+    }
+  }
+}
+
+
+@include sp {
+  
+  .success-area .success-area__appeal-bottom-right {
+    flex-direction: column;
+    margin-left: 0;
+
+    .appeal-bottom-text1 {
+      width: 100%;
+      margin-right: 0;
+     
+  }
+
+  img {
+    display: none;
+  }
+  }
+  .success-area .success-area__appeal-bottom-left {
+    flex-direction: column-reverse;
+    margin-right: 0;
+
+    .appeal-bottom-text2 {
+      width: 100%;
+  }
+  img {
+    display: none;
+  }
+  }
+
+  .appeal-bottom-text1::after {
+    display: none;
+   
+}
+  .appeal-bottom-text2::after {
+    display: none;
+   
+}
+
+
+}
+
+@include max($sm) {
+  .appeal-bottom-text1 {
+    font-size: 22px;
+  }
+  .appeal-bottom-text2w {
+    font-size: 22px;
+  }
 }

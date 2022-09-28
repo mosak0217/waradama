@@ -45,9 +45,58 @@ c-mv
 .mv-sub {
 
 
-  .slick-img {
+  .mv-img {
     filter: brightness(70%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 424px;
+    
+    
   }
+
+  .img-change-about {
+    background-image: url(../img/common/about-mv-1.jpg);
+    
+  }
+  .img-change-community {
+    background-image: url(../img/common/community-mv-1.jpg);
+    
+  }
+  .img-change-contact {
+    background-image: url(../img/common/mv-1.jpg);
+    
+  }
+  .img-change-life {
+    background-image: url(../img/common/life-mv-1.jpg);
+    
+  }
+  .img-change-media {
+    background-image: url(../img/common/mediat-mv-1.jpg);
+    
+  }
+  .img-change-media {
+    background-image: url(../img/common/media-mv-1.jpg);
+    
+  }
+  .img-change-news {
+    background-image: url(../img/common/mv-1.jpg);
+    
+  }
+  .img-change-pr {
+    background-image: url(../img/common/pr-mv-1.jpg);
+    
+  }
+  .img-change-voices {
+    background-image: url(../img/common/voices-mv-1.jpg);
+    
+  }
+
+
+
+
+
 }
 
 @include max($tab) {

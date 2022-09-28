@@ -187,9 +187,17 @@ about
   }
 }
 
+@include min($big) {
+  .about-cont .about-text-area {
+    font-size: 25px;
+ 
+}
+}
+
 
 #about {
   margin-bottom: 70px;
+  padding: 10px;
  
 .btn a {
   background-color: $white;
@@ -297,16 +305,17 @@ service
   width: 100%;
 
   .pr-img {
-      width: 44%;
+      width: 100%;
       margin-left: 95px;
   }
   .life-img {
-      width: 44%;
+      width: 100%;
       margin-right: 95px;
+      text-align: center;
 }
 
 .service-cont__textarea {
-  width: 48%;
+  width: 100%;
   
 
   .service-title {
@@ -354,11 +363,17 @@ service
 
   .service-desc-text {
     text-align: center;
+    align-items: center;
+    margin-left: 0%;
   }
 
   .service-cont__textarea .btn {
     justify-content: center;
   }
+  .service-cont .service-desc {
+    width: 100%;
+    text-align: center;
+}
 
   .service-cont__textarea .life-produce-title {
     padding-left: 0% !important;
@@ -371,6 +386,7 @@ service
 .service-cont .life-img {
   margin-right: 0; 
   text-align: center;
+  margin-bottom: 50px;
 }
 }
 
@@ -454,6 +470,12 @@ a {
   }
 }
 
+@include min ($big) {
+  .service-cont__textarea p {
+    font-size: 28px;
+}
+}
+
 
 /* --------------------------------
 voices
@@ -534,8 +556,63 @@ voices
   img {
     width: 100%;
   }
+
+  .voice-img-area__name {
+    font-size: 34px;
+  }
+  .voice-img-area__info {
+    font-size: 28px;
+  }
+}
+
+.voice-desc__title {
+  margin-top: 20px;
+  text-align: center;
+}
+.voice-desc {
+  margin-left: 0;
+  width: 100%;
+  padding: 10px;
+}
+section#voices {
+  padding: 10px;
+}
+.voice-desc__text {
+  font-size: 28px;
+}
+.voice-desc__title {
+  font-size: 40px;
+  
 }
 }
+
+@include max($tab) {
+
+  .voice-img-area__name {
+    font-size: 26px !important;
+  }
+  .voice-img-area__info {
+    font-size: 20px !important;
+  }
+
+  .voice-desc__text {
+    font-size: 18px !important;
+  }
+  .voice-desc__title {
+    font-size: 32px !important;
+    
+  }
+
+  #voices {
+    .btn a {
+      width: 270px;
+    }
+  }
+}
+
+
+
+
 
 
 
@@ -609,6 +686,7 @@ blog
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  width: 100%;
 }
 
 .blog-cont__text {
@@ -617,14 +695,10 @@ blog
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden; 
+  padding-top: 16px;
 }
 
 
-
-.voice-page-text {
-  
-
-}
 
 .voice-desc-page {
   width: 60%;
@@ -633,6 +707,33 @@ blog
   .voice-desc__title {
     margin-bottom: 30px;
 }
+}
+
+@include max($blog) {
+  .blog-cont-area {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+    .blog-cont {
+      margin-right: 0;
+      margin-bottom: 50px;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+    
+  }
+}
+
+@include max($sm) {
+  #blog {
+    .btn a {
+      width: 300px !important;
+    }
+  }
 }
 
 

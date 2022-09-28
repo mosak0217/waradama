@@ -41,7 +41,9 @@
 }
 
 .c-block-input__items {
-  margin-bottom: 32px
+  margin-bottom: 32px;
+  width: 32%;
+  margin: 0 auto;
 }
 
 .c-block-input__title {
@@ -105,30 +107,17 @@
 }
 
 
-.radio-top {
-  text-align: left;
-}
-
-.radio-bottom {
-  text-align: left;
-
-  .c-block-input__radio {
-    text-align: left;
-  }
-}
-
 .c-block-input__items {
   text-align: center;
   display: grid;
-  justify-items: center;
+  justify-items: left;
   align-items: center;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 70px;
+  line-height: 2;
 
 }
 
-.radio-ajustment {
-  margin-left: 46px;
-}
 
 
 .form-item {
@@ -272,6 +261,38 @@
     }
 
     
+  }
+
+  @include sp {
+    .c-block-input {
+      display: inline-block;
+    
+  }
+  .c-block-input__items {
+    width: 100%;
+  }
+  .c-block-input__radio {
+   padding-left: 17px;
+}
+
+
+  }
+
+  @include max($sm) {
+    .c-block-input__items {
+      grid-template-columns: 1fr;
+  }
+
+  }
+
+  @include max($tab) {
+    .form-item .form-item-input {
+      width: 100%;
+    }
+    .form-item .form-item-Textarea {
+      width: 100%;
+    }
+
   }
 
   

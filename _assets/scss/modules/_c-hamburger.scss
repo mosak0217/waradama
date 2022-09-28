@@ -57,7 +57,7 @@ hamburger
     opacity: 0;
   }
   li.header-nav__list-item {
-    height: 100px;
+    height: 130px;
   }
 
   .hamburger {
@@ -134,5 +134,53 @@ hamburger
   
 }
 
+.header-nav__list-item {
+  margin-right: 0;
+  font-size: 32px;
+
+  span {
+    font-size: 26px;
+  }
+
+
+
+}
+
+}
+
+
+@include max($sm) {
+  .header-nav__list-item {
+  
+    span {
+      font-size: 18px;
+    }
+  
+  }
+
+  .header-nav__list-item a {
+    font-size: 26px;
+    
+  }
+}
+
+@include max($tab) {
+  .header-nav__list {
+    top: 50%;
+    .header-nav__list-item {
+      height: 100px;
+      white-space: nowrap;
+
+      a {
+        font-size: 22px;
+      }
+
+      span {
+        font-size: 18px;
+      }
+
+
+    }
+}
 }
 

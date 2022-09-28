@@ -63,6 +63,7 @@ community
   align-items: center;
   width: 100%;
   margin-bottom: 123px;
+  padding: 10px;
 }
 
 .yoga-desc {
@@ -275,4 +276,116 @@ community
     }
    
   }
+}
+
+
+@include sp {
+
+  .yoga-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .yoga-cont {
+    flex-direction: column;
+    align-items: center;
+
+    .yoga-desc {
+      margin-bottom: 80px;
+      margin-left: 0;
+    }
+  }
+  #yoga .container .community-title {
+    justify-content: center;
+    font-size: 32px;
+  }
+  .yoga-right {
+    width: auto;
+    margin-left: 0;
+}
+.yoga-left .community-text {
+  margin-left: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+}
+
+@include max($tab) {
+  .yoga-desc {
+
+    tr {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+}
+
+@include max($sm) {
+  .yoga-desc {
+    width: 100%;
+  }
+  .yoga-desc caption {
+    font-size: 22px;
+  }
+  .yoga-desc caption img {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+}
+
+@include sp {
+  #seminar .seminer-cont {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+
+#seminar .community-title  {
+  justify-content: center;
+ 
+}
+#seminar .community-text {
+  margin-left: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#seminar .community-title {
+  font-size: 32px;
+}
+#seminar .seminer-cont img {
+  width: auto;
+}
+.seminer-achievement {
+  font-size: 22px;
+}
+}
+
+@include max($tab) {
+  .seminer-info {
+    line-height: 2;
+}
+}
+
+@include sp {
+  #activity .community-title {
+    font-size: 32px;
+    justify-content: center;
+}
+#activity .activity-cont {
+  flex-direction: column;
+  align-items: center;
+}
+#activity .movie-area {
+  margin-left: 0;
+  margin-top: 50px;
+  width: auto;
+}
 }

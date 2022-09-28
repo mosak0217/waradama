@@ -2,3 +2,260 @@
 @use '../../setting/setting' as *;
 
 
+
+/* --------------------------------
+news
+----------------------------------- */
+
+
+
+#news {
+
+  #tab {
+    margin-top: 100px;
+  }
+
+  .news-info-table {
+    width: 100%;
+    margin-bottom: 150px;
+
+    .info {
+      background: $red;
+    }
+
+    .topics {
+      background: $topic;
+    }
+    .seminer {
+      background: $seminar;
+    }
+
+    tr {
+
+      time {
+        font-size: 18px;
+        font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: italic;
+width: 7%;
+      }
+
+      td {
+        border-bottom: 1px dotted $gray;
+      padding: 20px 0;
+        
+        span {
+          color: $white;
+          max-width: 110px;
+          width: 100%;
+          font-size: 14px;
+          height: 25px;
+          text-align: center;
+          display: inline-block;
+        }
+
+        a {
+          font-size: 16px;
+          font-weight: bold;
+          border-bottom: 1px solid black;
+          margin-left: 14px;
+
+        }
+      }
+
+    }
+  }
+}
+
+.news-info-table {
+
+  .time {
+    width: 20%;
+  }
+  .news-info-text {
+    width: 80%;
+
+    span {
+      width: 110px;
+    }
+  }
+}
+
+@include sp {
+  .news-info-table .time {
+    width: 100%;
+    display: block;
+}
+
+  .news-info-table .news-info-text {
+    width: 100%;
+    display: block;
+   
+}
+#news .news-info-table tr td span {
+  display: block;
+}
+#news .news-info-table tr td a {
+  margin-left: 0; 
+  line-height: 3;
+}
+#news .news-info-table tr td {
+  border-bottom: none;
+  padding: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#news .news-info-table tr {
+  border-bottom: 1px solid $gray;
+  padding-top: 20px;
+}
+}
+
+
+
+
+
+
+
+/* --------------------------------
+news-page
+----------------------------------- */
+
+
+.mv-info {
+  
+
+  .news-top {
+    background: $red;
+    height: 280px;
+    display: flex;
+      justify-content: center;
+      
+
+    .mv-info-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60px;
+
+      .mv-info-title {
+        margin-left: 38px;
+        text-align: center;
+        color: $white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+
+        span {
+          display: block;
+      font-size: 20px;
+      font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.2em;
+        }
+      }
+    }
+  }
+}
+
+#info-page {
+  margin-top: 100px;
+  
+  .info-cont {
+    width: 68%;
+    padding: 10px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+
+    .text-area {
+      font-size: 16px;
+      padding-top: 30px;
+    }
+
+    .title-area {
+      border-bottom: 1px solid $gray;
+      padding-bottom: 20px;
+      h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: $red;
+
+      }
+      .tag-area {
+
+        
+
+        .category {
+          font-size: 14px;
+          font-weight: bold;
+          display: inline-block;
+          width: 110px;
+          background: $red;
+          color: $white;
+          text-align: center;
+        }
+
+        time {
+          font-size: 18px;
+          font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: italic;
+padding-left: 15px;
+
+        }
+
+      }
+    }
+
+  }
+}
+
+#info-page {
+  .container {
+    margin-bottom: 200px;
+
+    .btn {
+      display: flex;
+    justify-content: center;
+    width: 100%;
+    transition: all 1s ease;
+    font-style: normal;
+    }
+
+    .btn:hover {
+      transform: translateY(-10px);
+    }
+    
+
+    .btn a {
+      background-color: $white;
+      border: 1px solid $gray;
+      border-radius: 0;
+      color: black;
+      display: inline-block;
+      font-size: 16px;
+      padding: 20px;
+      position: relative;
+      text-decoration: none;
+      width: 234px;
+      letter-spacing: 0.2em;
+  }
+  .btn a:hover::before {
+    display: none;
+  }
+  }
+}
+
+@include sp {
+  #info-page .info-cont .title-area .tag-area .category {
+    display: block;
+}
+#info-page .info-cont {
+  width: 100%;
+  
+}
+#info-page .info-cont .title-area .tag-area time {
+  padding-left: 0;
+}
+}

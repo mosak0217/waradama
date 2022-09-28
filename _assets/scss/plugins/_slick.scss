@@ -113,15 +113,19 @@ slick
     height: 600px;
     margin: 0 auto;
   }
-  .mv-slick div.slick-img {
-    background-image: url(/img/common/slick-img.jpg);
+  .mv-slick div.slick-img-1 {
+    background-image: url(/img/common/mv-1.jpg);
   }
-  .mv-slick div.slick-img {
-    background-image: url(/img/common/slick-img.jpg);
+  .mv-slick div.slick-img-2 {
+    background-image: url(/img/common/life-mv-1.jpg);
   }
-  .mv-slick div.slick-img {
-    background-image: url(/img/common/slick-img.jpg);
+  .mv-slick div.slick-img-3 {
+    background-image: url(/img/common/media-mv-1.jpg);
   }
+  .mv-slick div.slick-img-4 {
+    background-image: url(/img/common/community-mv-1.jpg);
+  }
+  
 
   /*位置を変える*/
 .slick-dots {

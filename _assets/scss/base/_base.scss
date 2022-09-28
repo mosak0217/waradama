@@ -121,7 +121,6 @@ main {
 
 .inner-block {
   max-width: 1120px;
-  padding: 0 30px;
   box-sizing: content-box;
   @include pc {
     margin: 0 auto;
@@ -146,6 +145,7 @@ main {
 .container {
   max-width: 1120px;
   margin: 0 auto;
+  padding: 10px
 }
 
 dl,dt,dd {
@@ -171,6 +171,8 @@ text-align: center;
 
   }
 }
+
+
 
 
 
@@ -217,6 +219,10 @@ text-align: center;
   vertical-align: top;
 }
 
+main.p-home {
+  overflow-x: hidden;
+}
+
 /*------------------------------------------------------------------------------
   reset SP
 ------------------------------------------------------------------------------*/
@@ -229,8 +235,7 @@ text-align: center;
   }
 
   .inner-block {
-    padding: 0 10px;
-    width: auto;
+    max-width: 1120px;
   }
 
   #wrapper {

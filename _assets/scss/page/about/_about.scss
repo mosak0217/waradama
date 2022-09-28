@@ -18,6 +18,7 @@ about
     font-family: futura-pt, sans-serif;
 font-weight: 500;
 font-style: italic;
+padding-top: 30px;
   }
 }
 
@@ -33,7 +34,7 @@ font-style: italic;
     font-size: 20px;
     color: black;
     font-family: futura-pt, sans-serif;
-font-weight: 500;
+font-weight: 400;
 font-style: italic;
 letter-spacing: 0.1em;
   }
@@ -43,6 +44,7 @@ letter-spacing: 0.1em;
 
 
 #message {
+  padding: 10px;
 
   .container {
 
@@ -76,6 +78,49 @@ letter-spacing: 0.1em;
 
 }
 
+@include sp {
+  #message {
+
+    .flex-cont {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      
+  }
+
+  }
+
+  #message .flex-cont .message-cont__text {
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 50px;
+}
+
+#message .flex-cont img {
+  width:vw(400,1400);
+  height: auto;
+}
+  
+}
+
+@include max($tab) {
+  #message .flex-cont img {
+    width: 64% !important;
+  }
+}
+@include max($sm) {
+  #message .container .message-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+}
+}
+
+
+
+
 #profile {
 
   .flex-cont {
@@ -97,6 +142,40 @@ letter-spacing: 0.1em;
       }
     }
   }
+}
+
+@include sp {
+  .flex-cont {
+    flex-direction: column;
+    align-items: center;
+  }
+  #profile .flex-cont .ceo-img-area {
+    width: 100%;
+    text-align: center;
+}
+.ceo-name .ceo-name__logo {
+  justify-content: center;
+}
+.ceo-detail {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  display: grid;
+    justify-items: left;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#profile .flex-cont .ceo-text-area {
+  margin-left: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+
+
+
+
 }
 
 .ceo-img-area {
@@ -220,6 +299,7 @@ li:before {
     flex-wrap: wrap;
     width: 100%;
     font-size: 16px;
+    padding: 16px;
 
     dt {
       width: 20%;
@@ -283,6 +363,144 @@ li:before {
  .container {
   max-width: 800px;
  }
+}
+
+#member {
+  margin-bottom: 150px;
+
+  .container {
+
+    .flex-cont {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+
+      .member-img {
+        width: 28%;
+        img {
+          width: 100%;
+        }
+      }
+
+      
+    }
+  }
+
+
+
+
+  .member-textarea {
+    width: 45%;
+    
+    .member-text__name {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $gray;
+      padding-bottom: 22px;
+     
+      h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 12px;
+      }
+
+    }
+
+    .member-text {
+      padding-top: 21px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+  }
+}
+
+#member {
+
+  .flex-cont {
+
+    .top-member {
+      margin-left: 26px;
+
+      
+    }
+  }
+}
+
+#member {
+
+  .flex-cont {
+
+    .bottom-member {
+      margin-right: 26px;
+      padding-top: 130px;
+    }
+  }
+}
+
+.top-group {
+  padding: 10px;
+}
+
+@include sp {
+  .member-img {
+    width:vw(400,1400) !important;
+  }
+
+
+  #member .flex-cont .bottom-member {
+    margin-right: 0;
+    padding-top: 0;
+}
+#member .flex-cont .top-member {
+  margin-left: 0;
+}
+#member .member-textarea {
+  width: 80%;
+  margin-top: 60px;
+}
+
+
+#member {
+  .bottom-cont {
+    flex-direction: column-reverse;
+  }
+}
+
+
+}
+
+@include max($tab) {
+
+  #member .container .flex-cont .member-img {
+    width:vw(800,1400) !important;
+}
+ 
+}
+@include max($sm) {
+
+  #member .member-textarea .member-text__name h2 {
+    font-size: 24px;
+  }
+ 
+}
+@include max($tab) {
+
+  .outline-desc {
+    flex-direction: column;
+    margin: 10px;
+
+    dt {
+      width: 100% !important;
+      border-right: none !important;
+    }
+    dd {
+      width: 100% !important;
+      text-align: center;
+    }
+  }
+
+  
+ 
 }
 
 

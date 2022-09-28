@@ -6,6 +6,10 @@
 modal-area
 ----------------------------------- */
 
+.js-content {
+  display: none;
+}
+
 /* モーダル */
 .modal-overlay {
   align-items: center;
@@ -143,7 +147,7 @@ modal-area
   margin-right: 20px;
 
  }
- li a{
+ li{
   color: $red;
   display: block;
   padding: 20px 70px;
@@ -311,4 +315,109 @@ article.contents {
  
 .batsu::after {
   transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+
+@include sp {
+  article.contents {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #container .post {
+    margin-left: 0;
+    width: auto
+   
+}
+
+
+  
+
+}
+
+
+@include sp {
+  #tab {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      margin-right: 0;
+      width: 300px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+  }
+}
+
+@include max($modal) {
+
+  .modal {
+    .voice-img-area .category {
+      left: 0;
+    }
+
+    .voice-cont {
+      align-items: center;
+      flex-direction: column;
+  
+      .voice-img-area img {
+        width: 100%;
+    }
+  
+    }
+
+    .voice-img-area {
+      width: 50%;
+  }
+
+  .voice-desc__title {
+    margin-top: 24px;
+}
+  }
+
+
+}
+
+@include max($tab ) {
+
+
+
+  .modal {
+
+    .voice-cont {
+  
+      .voice-img-area img {
+        width: 100%;
+    }
+  
+    }
+
+    .voice-img-area {
+      width: 80% !important;
+  }
+
+  .batsu {
+    right: 15px;
+  }
+
+  }
+}
+
+@include max($sm) {
+ 
+  .modal {
+    .modal-voice {
+      width: 90%;
+      border-radius: 10px;
+      padding-left: 12px;
+      padding-right: 12px;
+  }
+
+  .batsu {
+    top: 9px;
+  }
+  }
 }
