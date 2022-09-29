@@ -258,6 +258,7 @@ about
 @include max ($tab) {
   .catch-area {
     font-size: 32px;
+    padding: 10px;
 
     span {
       font-size: 48px;
@@ -325,7 +326,7 @@ service
     color: $white;
     text-align: left;
    padding-left: 20%;
-    margin-right: 20px;
+   margin-right: 0px !important;
   }
 }
 }

@@ -222,7 +222,7 @@
   .ECM_CheckboxInput-LabelText {
   margin-left: 12px;
   display: block;
-  font-size: 18px;
+  font-size: clamp(14px, vw(18,1000) , 18px);
   font-weight: bold;
   }
 
